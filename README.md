@@ -47,8 +47,8 @@ Require it first:
 Thanks To
 ------
 
-+ @fxsjy: This guy created the Jieba (original version)[https://github.com/fxsjy/jieba].
-+ @piaolingxue: He made the (Java version)[https://github.com/huaban/jieba-analysis] of Jieba which `clj-jb` depended on.
++ @fxsjy: This guy created the Jieba [original version](https://github.com/fxsjy/jieba).
++ @piaolingxue: He made the [Java version](https://github.com/huaban/jieba-analysis) of Jieba which `clj-jb` depended on.
 
 Contribute
 ------
