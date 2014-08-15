@@ -1,5 +1,14 @@
 (ns clj-jb
-  (:import [com.huaban.analysis.jieba JiebaSegmenter SegToken Word]))
+  (:import [com.huaban.analysis.jieba WordDictionary JiebaSegmenter SegToken Word]))
+
+(defn load-user-dictionary
+  "Load customer dictionary."
+  [path]
+  (try
+    (let [instance (.getInstance WordDictionary)]
+      (.loadUserDict instance (clojure.java.io/file path))
+      true)
+    (catch Exception e false)))
 
 (defn split
   "Participle a sentence.
